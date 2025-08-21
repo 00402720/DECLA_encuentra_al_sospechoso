@@ -1,0 +1,32 @@
+Pasos de la investigación
+
+
+1. Identificar sospechosos
+Consulta en Prolog quiénes son las personas en la mansión.
+QUERY: persona(Quien).
+
+2. Analizar motivos
+Crea una regla para identificar quién tiene un motivo para matar.
+QUERY: sospechoso(Quien).
+
+3. Verificar oportunidad
+Crea una regla para identificar quién estuvo en la biblioteca (escena del crimen).
+QUERY: en_biblioteca(Quien).
+
+4. Cruzar información
+Crea una regla que combine motivo y oportunidad.
+QUERY: motivo_oportunidad(Quien).
+
+5. Analizar el arma
+El informe forense revela que la víctima fue estrangulada.
+Ajusta tu base de conocimiento para que la única coincidencia sea con el arma correcta (cuerda).
+QUERY: No hay query
+
+6. Descubrir al culpable
+Finalmente, crea una regla para determinar quién es el asesino culpable y realiza la consulta correspondiente.
+QUERY: uso_arma_confirmada(Quien, cuerda).
+
+Pista final
+El asesino culpable es la persona que reúne motivo, oportunidad y acceso al arma.
+Tu investigación debe conducir a un único culpable.
+QUERY: culpable(Quien).
